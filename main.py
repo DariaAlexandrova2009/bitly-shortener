@@ -59,9 +59,7 @@ if __name__ == "__main__":
     )
     parser.add_argument('user_link', help='Введите ссылку ')
     args = parser.parse_args()
-    #print(args.name)
     load_dotenv()
-    #user_link = input("Введите ссылку: ")
     bitly_token = os.environ["BITLY_TOKEN"]
     if is_bitlink(bitly_token, args):
         try:
